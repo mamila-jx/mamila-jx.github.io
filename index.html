@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" >
+  <meta name="author" content="Marco Milani" >
+  <meta name="description" content="Marco Milani — Android & IoT Developer. Secure apps and IoT prototypes. Resume, projects, and contact." >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  
+  <!-- SEO -->
+  <link rel="canonical" href="https://mamila.dev/" >
+  <meta name="robots" content="index, follow" >
+  
+  <!-- Open Graph for Social -->
+  <meta property="og:title" content="Marco Milani — Android & IoT Developer" >
+  <meta property="og:description" content="Building secure Android apps & IoT prototypes. Resume, projects, and contact." >
+  <meta property="og:image" content="https://mamila.dev/assets/images/preview.png" >
+  <meta property="og:type" content="website" >
+  <meta property="og:url" content="https://mamila.dev/" >
+
+  <title>Marco Milani — Android & IoT Developer</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+
+   <!-- Preload Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </noscript>
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/structured-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</head>
+<body class="font-body">
+
+  <header id="top-bar" class="relative max-w-5xl mx-auto p-6 lg:p-12 hidden-before-load">
+  <div class="flex items-center w-full">
+
+<!-- Logo + Name -->
+<div class="flex items-center gap-4">
+  <!-- If you want to add a logo later, put it here -->
+  
+  <div class="flex flex-col">
+    <h1 class="text-cyber-text font-heading text-xl lg:text-2xl">Marco Milani</h1>
+    <p class="text-cyber-muted text-sm lg:text-base">Android & IoT Developer</p>
+    <a href="mailto:mamila.inbox@outlook.com" class="flex items-center gap-1 text-xs text-cyber-muted mt-1 hover:text-cyber-accentHover hover:underline transition duration-300">
+  <svg class="w-3 h-3 text-current" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 12l-8-5h16l-8 5z"/>
+    <path d="M4 7v10h16V7l-8 5-8-5z"/>
+  </svg>
+  mamila.inbox@outlook.com
+</a>
+  </div>
+</div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
+      <a href="#projects" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+      <a href="#about" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+      <a href="#contact" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="menu-btn" aria-expanded="false" class="btn md:hidden ml-auto text-cyber-accent">Menu</button>
+
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="md:hidden mt-4 space-y-2 text-right">
+    <a href="#projects" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+    <a href="#about" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+    <a href="#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<main>
+<section class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Text -->
+    <div class="text-center lg:text-left opacity-0 -translate-y-2 animate-fade-in">
+      <h2 class="font-heading text-4xl lg:text-5xl leading-tight mb-4 logo-gradient">
+        Building high-quality Android & IoT apps, hardened for the real world.
+      </h2>
+      <p class="text-cyber-muted mb-6">
+        I deliver reliable, resilient systems while constantly exploring new technologies and refining my craft.
+        <!-- Always learning, always improving — I deliver production-ready systems with resilience at their core. -->
+      </p>
+      <div class="flex gap-4">
+        <a href="assets/doc/Milani-EN.pdf" target="_blank" rel="noopener noreferrer" class="inline-block bg-cyber-accent text-cyber-bg px-4 py-2 rounded-md font-medium hover:bg-cyber-accentHover hover:shadow-glow transition">Resume</a>
+      </div>
+    </div>
+
+    <!-- Right Visual / Project Preview -->
+    <div class="opacity-0 translate-y-2 animate-fade-in">
+      <div class="relative rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-glow">
+
+        <!-- Gradient border -->
+        <div class="absolute inset-0 rounded-xl p-[2px] bg-gradient-to-br from-cyber-accent to-cyber-accentHover pointer-events-none">
+          <div class="w-full h-full bg-cyber-surface rounded-lg"></div>
+        </div>
+
+        <!-- Placeholder Project Collage (swap later) -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+  <img src="assets/images/product-overview.png" alt="Project Preview" class="w-full h-full object-cover" loading="lazy">
+</div>
+        <!-- Optional overlay text -->
+        <div class="absolute bottom-3 left-3 z-20 bg-black/30 text-cyber-text text-sm px-2 py-1 rounded">
+          Featured Work
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Projects -->
+<section id="projects" class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+  <h3 class="font-heading text-2xl mb-6">Selected projects</h3>
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Existing Projects -->
+    <article class="card p-6 rounded-lg hover:scale-105">
+      <h4 class="font-heading text-lg mb-1">CodeFort</h4>
+      <p class="text-cyber-muted text-sm mb-3">Lightweight Kotlin security library for Android with emulator, debugging and tamper detection.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Kotlin</span>
+        <span class="px-3 py-1 border rounded text-xs">Android</span>
+        <span class="px-3 py-1 border rounded text-xs">Security</span>
+        <span class="px-3 py-1 border rounded text-xs">Biometrics</span>
+      </div>
+      <a href="https://codeberg.org/mamila/CodeFort" target="_blank" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">View on Codeberg →</a>
+    </article>
+
+    <article class="card p-6 rounded-lg hover:scale-105">
+      <h4 class="font-heading text-lg mb-1">SafeMate</h4>
+      <p class="text-cyber-muted text-sm mb-3">Secure Android app for IoT device management with biometric authentication and hardened architecture.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Android</span>
+        <span class="px-3 py-1 border rounded text-xs">IoT</span>
+        <span class="px-3 py-1 border rounded text-xs">Security</span>
+        <span class="px-3 py-1 border rounded text-xs">Biometrics</span>
+      </div>
+      <a href="https://codeberg.org/mamila/SafeMate" target="_blank" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">View on Codeberg →</a>
+    </article>
+
+    <article class="card p-6 rounded-lg hover:scale-105">
+      <h4 class="font-heading text-lg mb-1">SafeMateBox</h4>
+      <p class="text-cyber-muted text-sm mb-3">Arduino-based smart lock prototype with IoT integration, and sensor monitoring.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Arduino</span>
+        <span class="px-3 py-1 border rounded text-xs">IoT</span>
+        <span class="px-3 py-1 border rounded text-xs">Sensors</span>
+      </div>
+      <a href="https://codeberg.org/mamila/SafeMateBox" target="_blank" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">View on Codeberg →</a>
+    </article>
+
+    <article class="card p-6 rounded-lg hover:scale-105">
+      <h4 class="font-heading text-lg mb-1">LumiPlayer</h4>
+      <p class="text-cyber-muted text-sm mb-3">Custom multimedia player UI in Kotlin with modular design and ExoPlayer integration.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Kotlin</span>
+        <span class="px-3 py-1 border rounded text-xs">Android</span>
+        <span class="px-3 py-1 border rounded text-xs">ExoPlayer</span>
+        <span class="px-3 py-1 border rounded text-xs">Media Player</span>
+      </div>
+      <a href="https://codeberg.org/mamila/LumiPlayer" target="_blank" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">View on Codeberg →</a>
+    </article>
+
+    <!-- Coming Soon Projects -->
+    <article class="card p-6 rounded-lg hover:scale-105 opacity-80">
+      <h4 class="font-heading text-lg mb-1">D&D Companion App</h4>
+      <p class="text-cyber-muted text-sm mb-3">Kotlin Multiplatform assistant for tabletop gamers: maps, dice rolls, character sheets.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Kotlin</span>
+        <span class="px-3 py-1 border rounded text-xs">Multiplatform</span>
+        <span class="px-3 py-1 border rounded text-xs">Game Tools</span>
+      </div>
+      <span class="text-xs text-cyber-muted">Coming Soon</span>
+    </article>
+
+    <article class="card p-6 rounded-lg hover:scale-105 opacity-80">
+      <h4 class="font-heading text-lg mb-1">IoT Diet Scale</h4>
+      <p class="text-cyber-muted text-sm mb-3">Portable Arduino-powered scale connecting to your phone for on-the-go diet tracking.</p>
+      <div class="flex gap-2 mb-2">
+        <span class="px-3 py-1 border rounded text-xs">Arduino</span>
+        <span class="px-3 py-1 border rounded text-xs">IoT</span>
+        <span class="px-3 py-1 border rounded text-xs">Health</span>
+        <span class="px-3 py-1 border rounded text-xs">Portable</span>
+      </div>
+      <span class="text-xs text-cyber-muted">Coming Soon</span>
+    </article>
+
+  </div>
+</section>
+
+<!-- Skills & Highlights -->
+<section id="skills" class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+  <h3 class="font-heading text-2xl mb-6">Skills & Highlights</h3>
+
+  <!-- Skills Grid -->
+  <div class="card p-6 rounded-lg mb-6">
+    <h4 class="font-heading text-lg mb-3">Core Skills</h4>
+    <div class="space-y-4 text-sm">
+      <!-- Android Core -->
+      <div>
+        <p class="mb-2">Android Core</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border rounded text-xs">Android</span>
+          <span class="px-3 py-1 border rounded text-xs">Kotlin</span>
+          <span class="px-3 py-1 border rounded text-xs">Jetpack Compose</span>
+          <span class="px-3 py-1 border rounded text-xs">Kotlin Multiplatform</span>
+          <span class="px-3 py-1 border rounded text-xs">Coroutines</span>
+          <span class="px-3 py-1 border rounded text-xs">Koin</span>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div>
+        <p class="mb-2">Security</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border rounded text-xs">App Hardening</span>
+          <span class="px-3 py-1 border rounded text-xs">Root & Tamper Detection</span>
+          <span class="px-3 py-1 border rounded text-xs">Certificate Pinning</span>
+          <span class="px-3 py-1 border rounded text-xs">Play Integrity API</span>
+          <span class="px-3 py-1 border rounded text-xs">Secure Storage</span>
+        </div>
+      </div>
+
+      <!-- Media -->
+      <div>
+        <p class="mb-2">Media</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border rounded text-xs">ExoPlayer</span>
+          <span class="px-3 py-1 border rounded text-xs">Streaming Integrations</span>
+        </div>
+      </div>
+
+      <!-- IoT / Extras -->
+      <div>
+        <p class="mb-2">IoT & Extras</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border rounded text-xs">IoT</span>
+          <span class="px-3 py-1 border rounded text-xs">Arduino</span>
+          <span class="px-3 py-1 border rounded text-xs">UI/UX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Highlights -->
+  <div class="card p-6 rounded-lg">
+    <h4 class="font-heading text-lg mb-3">Highlights</h4>
+    <ul class="list-disc list-inside text-cyber-muted space-y-2">
+      <li><strong>8+ years of experience</strong> in software development, with a strong focus on Android.</li>
+      <li>Delivered and maintained apps for major clients including <strong>RaiPlay</strong>, <strong>Windtre</strong>, and <strong>Regione Lombardia</strong>.</li>
+      <li>Blending development and security expertise: skilled in <strong>secure coding</strong>, <strong>OWASP Top 10</strong>, and mobile app hardening.</li>
+      <li>Experienced in <strong>Agile/Scrum</strong> delivery and cross-functional collaboration with UX/UI teams.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<!-- Certifications -->
+<section id="certifications" class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+  <h3 class="text-2xl font-heading mb-6">Certifications</h3>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- Associate Android Developer -->
+    <div class="card p-6 rounded-lg">
+      <h4 class="mb-2 font-heading text-lg"><a href="https://developers.google.com/certification/associate-android-developer" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline">
+       Associate Android Developer (Kotlin)
+      </a></h4>
+      <p class="text-sm text-cyber-muted mb-3">
+        Earned through Google Developers. Validated professional-level Android development skills.
+        <span class="italic">(Certification discontinued)</span>
+      </p>
+      <a href="https://www.credential.net/ebe5bf03-78ce-4ff7-8408-f9b2d7f9f2e1" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline text-sm">
+        View Credential
+      </a>
+    </div>
+
+    <!-- Professional Scrum Developer I -->
+    <div class="card p-6 rounded-lg">
+      <h4 class="mb-2 font-heading text-lg"><a href="https://www.scrum.org/assessments/professional-scrum-developer-certification" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline">
+       Professional Scrum Developer I (PSD I)
+      </a></h4>
+      <p class="text-sm text-cyber-muted mb-3">
+        Globally recognized Scrum.org certification demonstrating Agile software development practices
+        and effective teamwork in Scrum environments.
+      </p>
+      <a href="https://www.credly.com/badges/72f08994-2b97-4582-9a35-d58921475547" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline text-sm">
+        View Credential
+      </a>
+    </div>
+
+    <!-- Google Cybersecurity Professional Certificate -->
+    <div class="card p-6 rounded-lg">
+      <h4 class="mb-2 font-heading text-lg"><a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline">
+       Google Cybersecurity Professional Certificate
+      </a></h4>
+      <p class="text-sm text-cyber-muted mb-3">
+        Completed hands-on training in threat identification, risk mitigation, and security tooling
+        (SIEM, IDS, Linux, SQL, Python). Delivered through Coursera, 2022.
+      </p>
+      <a href="https://www.credly.com/badges/6ed66cb6-60e9-4368-83ad-2cd259b56ced" target="_blank" rel="noopener noreferrer" class="hover:text-cyber-accentHover hover:shadow-glow transition hover:underline text-sm">
+        View Credential
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- About -->
+<section id="about" class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+  <h3 class="text-2xl font-heading mb-6">About</h3>
+  <div class="card p-6 rounded-lg">
+    <p class="text-cyber-muted">
+      I build Android apps and IoT prototypes end-to-end, from user interfaces and API integrations to underlying architecture and security. 
+      I enjoy seeing projects through every layer, ensuring they work reliably and safely. Along the way, I explore practical security practices, 
+      Arduino experimentation, and Kotlin-based solutions that make software more resilient and maintainable.
+    </p>
+    <div class="mt-4 grid grid-cols-2 gap-4 text-sm text-cyber-muted">
+      <div>
+        <strong>Tooling</strong>
+        <div>Android, Kotlin, Arduino, API integration, UI/UX, Static Analysis</div>
+      </div>
+      <div>
+        <strong>Focus</strong>
+        <div>End-to-end development, IoT prototyping, resilient software</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact / Footer -->
+<footer id="contact" class="max-w-5xl mx-auto p-6 lg:p-12 mt-6 text-cyber-muted border-t border-cyber-border">
+  <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
+    
+    <!-- Left: Text links -->
+    <div class="text-sm">
+      <span>Let’s build something resilient. Find me on </span>
+      <a href="https://www.linkedin.com/in/marco-m-4b6149154/" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">LinkedIn</a>
+      <span> or check my </span>
+      <a href="https://codeberg.org/mamila" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">Codeberg</a>.
+    </div>
+
+    <!-- Right: Icons -->
+   <div class="flex gap-4 mt-4 lg:mt-0">
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/marco-m-4b6149154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:shadow-glow transition transform transition-transform hover:scale-125 hover:shadow-glow">
+    <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" class="w-9 h-9 object-contain" loading="lazy">
+  </a>
+
+  <!-- Codeberg -->
+  <a href="https://codeberg.org/mamila" target="_blank" rel="noopener noreferrer" aria-label="Codeberg" class="hover:shadow-glow transition transform transition-transform hover:scale-125 hover:shadow-glow">
+    <img src="assets/images/codeberg-icon.svg" alt="Codeberg" class="w-9 h-9 object-contain" loading="lazy">
+  </a>
+</div>
+  </div>
+
+<div class="mt-6 text-xs text-cyber-muted text-center lg:text-left">
+    © Marco Milani • Android & IoT Developer
+  </div>
+</footer>
+
+</body>
+</html>
