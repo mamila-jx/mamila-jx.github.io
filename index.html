@@ -52,15 +52,17 @@
   <div class="flex flex-col">
     <h1 class="text-cyber-text font-heading text-xl lg:text-2xl">Marco Milani</h1>
     <p class="text-cyber-muted text-sm lg:text-base">Android & IoT Developer</p>
-    <a href="mailto:mamila.inbox@outlook.com" class="flex items-center gap-1 text-xs text-cyber-muted mt-1 hover:text-cyber-accentHover hover:underline transition duration-300">
+    <a href="#" id="contact-link" data-c="bWFtaWxhLmluYm94QG91dGxvb2suY29t" class="flex items-center gap-1 text-xs text-cyber-muted mt-1 hover:text-cyber-accentHover hover:underline transition duration-300">
   <svg class="w-3 h-3 text-current" fill="currentColor" viewBox="0 0 24 24">
     <path d="M12 12l-8-5h16l-8 5z"/>
     <path d="M4 7v10h16V7l-8 5-8-5z"/>
   </svg>
-  mamila.inbox@outlook.com
+  Email me
 </a>
   </div>
 </div>
+
+
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
@@ -81,6 +83,26 @@
     <a href="#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
   </div>
 </header>
+
+
+  <div id="email-dialog" class="hidden fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center min-h-screen">
+  <div class="bg-cyber-dark border border-cyber-accent rounded-xl shadow-lg p-6 w-80 text-center z-[10000]">
+    <h2 class="text-lg font-bold text-cyber-accent mb-4">Choose Email Option</h2>
+    <p class="text-sm text-cyber-muted mb-6">How would you like to contact me?</p>
+
+    <div class="flex flex-col gap-3">
+      <button id="use-client" class="px-4 py-2 bg-cyber-accent text-black rounded-lg hover:bg-cyber-accentHover transition">
+        Use Email Client
+      </button>
+      <button id="copy-email" class="px-4 py-2 bg-cyber-darkMuted border border-cyber-accent text-cyber-accent rounded-lg hover:bg-cyber-accentHover hover:text-black transition">
+        Copy Address
+      </button>
+      <button id="cancel-dialog" class="px-4 py-2 bg-transparent text-cyber-muted hover:text-cyber-accentHover transition">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
 
 
 <!-- Hero Section -->
