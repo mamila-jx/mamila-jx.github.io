@@ -1,0 +1,122 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" >
+  <meta name="author" content="Marco Milani" >
+  <meta name="description" content="Blog – Android & IoT Development, Security, and Tech Articles by Marco Milani." >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Blog – Marco Milani</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-cyber-bg font-body text-cyber-text min-h-screen">
+  <!-- Header / Navigation -->
+  <header id="top-bar" class="max-w-5xl mx-auto p-6 lg:p-12">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="font-heading text-2xl lg:text-3xl text-cyber-accent">Marco Milani</h1>
+          <p class="text-cyber-muted text-sm">Android & IoT Developer</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
+        <a href="index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+        <a href="index.html#projects" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+        <a href="blog_index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+        <a href="index.html#about" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+        <a href="index.html#contact" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" class="btn md:hidden ml-auto text-cyber-accent">Menu</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 space-y-2 text-right">
+      <a href="index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+      <a href="index.html#projects" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+      <a href="blog_index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+      <a href="index.html#about" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+      <a href="index.html#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- Blog Hero -->
+  <section class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+    <div class="text-center">
+      <h2 class="font-heading text-4xl lg:text-5xl mb-4 logo-gradient">Tech Blog & Articles</h2>
+      <p class="text-cyber-muted mb-6 text-lg">Insights, tutorials, and deep dives into Android, IoT, and secure development.</p>
+    </div>
+  </section>
+
+  <!-- Blog Articles Grid -->
+  <main class="max-w-5xl mx-auto p-6 lg:p-12">
+    <section class="grid md:grid-cols-2 gap-8">
+      <!-- Article 1 -->
+      <article class="card bg-cyber-surface p-6 rounded-xl shadow-glow-cyan hover:scale-105 transition">
+        <h3 class="font-heading text-xl mb-2 text-cyber-accent">Alexa Skill Kit</h3>
+  <div class="text-cyber-muted text-xs mb-2">Written on: <time datetime="2022-12-06">6 December 2022</time></div>
+        <p class="text-cyber-muted mb-4">Learn how to build Alexa Skills and integrate them with Android TV apps using the Video Skill Kit.</p>
+        <a href="alexa-skill-kit.html" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">Read more →</a>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="card bg-cyber-surface p-6 rounded-xl shadow-glow-cyan hover:scale-105 transition">
+        <h3 class="font-heading text-xl mb-2 text-cyber-accent">Kotlin Multiplatform</h3>
+  <div class="text-cyber-muted text-xs mb-2">Written on: <time datetime="2023-12-05">5 December 2023</time></div>
+        <p class="text-cyber-muted mb-4">An introduction to Kotlin Multiplatform (KMP) and how to share code across Android, iOS, and beyond.</p>
+        <a href="kmp.html" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">Read more →</a>
+      </article>
+      
+
+      <!-- Article 3: Kotlin Multiplatform Jetpack Compose -->
+      <article class="card bg-cyber-surface p-6 rounded-xl shadow-glow-cyan hover:scale-105 transition">
+        <h3 class="font-heading text-xl mb-2 text-cyber-accent">Kotlin Multiplatform Jetpack Compose</h3>
+  <div class="text-cyber-muted text-xs mb-2">Written on: <time datetime="2024-11-18">18 November 2024</time></div>
+        <p class="text-cyber-muted mb-4">Learn about multiplatform UI development, challenges, and solutions using Jetpack Compose, Moko MVVM, Kamel, and more.</p>
+        <a href="kmpc.html" class="text-cyber-muted hover:text-cyber-accentHover hover:shadow-glow transition text-xs">Read more →</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="max-w-5xl mx-auto p-6 lg:p-12 mt-12 text-cyber-muted border-t border-cyber-border">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
+      <div class="text-sm">
+        <span>Let’s build something resilient. Find me on </span>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154/" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">LinkedIn</a>
+        <span> or check my </span>
+        <a href="https://codeberg.org/mamila" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">Codeberg</a>.
+      </div>
+      <div class="flex gap-4 mt-4 lg:mt-0">
+        <a href="#" id="contact-link" data-c="bWFtaWxhLmluYm94QG91dGxvb2suY29t" rel="noopener noreferrer" aria-label="Email" class="email-trigger hover:shadow-glow  transform transition-transform hover:scale-125 hover:shadow-glow">
+          <img src="assets/images/email-icon.svg" alt="Email" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:shadow-glow  transform transition-transform hover:scale-125 hover:shadow-glow">
+          <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://codeberg.org/mamila" target="_blank" rel="noopener noreferrer" aria-label="Codeberg" class="hover:shadow-glow  transform transition-transform hover:scale-125 hover:shadow-glow">
+          <img src="assets/images/codeberg-icon.svg" alt="Codeberg" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 text-xs text-cyber-muted text-center lg:text-left">
+      © 2025 Marco Milani • Android & IoT Developer
+    </div>
+  </footer>
+
+    <div id="email-dialog" class="hidden fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center min-h-screen">
+      <div class="bg-cyber-dark border border-cyber-accent rounded-xl shadow-lg p-6 w-80 text-center z-[10000]">
+        <h2 class="text-lg font-bold text-cyber-accent mb-4">Choose Email Option</h2>
+        <p class="text-sm text-cyber-muted mb-6">How would you like to contact me?</p>
+        <div class="flex flex-col gap-3">
+          <button id="use-client" class="px-4 py-2 bg-cyber-accent text-black rounded-lg hover:bg-cyber-accentHover transition">Use Email Client</button>
+          <button id="copy-email" class="px-4 py-2 bg-cyber-darkMuted border border-cyber-accent text-cyber-accent rounded-lg hover:bg-cyber-accentHover hover:text-black transition">Copy Address</button>
+          <button id="cancel-dialog" class="px-4 py-2 bg-transparent text-cyber-muted hover:text-cyber-accentHover transition">Cancel</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Marco Milani" />
+  <meta name="description" content="Kotlin Multiplatform Mobile (KMM) – Cross-platform Android & iOS development explained." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kotlin Multiplatform Mobile – Marco Milani</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-cyber-bg font-body text-cyber-text min-h-screen">
+  <header id="top-bar" class="max-w-5xl mx-auto p-6 lg:p-12">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="font-heading text-2xl lg:text-3xl text-cyber-accent">Marco Milani</h1>
+          <p class="text-cyber-muted text-sm">Android & IoT Developer</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
+        <a href="index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+        <a href="index.html#projects" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+        <a href="blog_index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+        <a href="index.html#about" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+        <a href="index.html#contact" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" class="btn md:hidden ml-auto text-cyber-accent">Menu</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 space-y-2 text-right">
+      <a href="index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+      <a href="index.html#projects" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+      <a href="blog_index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+      <a href="index.html#about" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+      <a href="index.html#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+    <div class="text-center">
+  <h2 class="font-heading text-4xl lg:text-5xl mb-4 logo-gradient">Kotlin Multiplatform Mobile (KMM)</h2>
+  <div class="text-cyber-muted text-sm mb-2">Written on: <time datetime="2023-12-05">5 December 2023</time></div>
+  <p class="text-cyber-muted mb-6 text-lg">Cross-platform Android & iOS development explained.</p>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto p-6 lg:p-12 space-y-12">
+    <!-- Page 1: What is KMM? -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">What is KMM?</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Kotlin Multiplatform Mobile is an SDK for Android and iOS development.</li>
+            <li>It offers all the benefits of native development while enabling cross-platform apps.</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image1.png" alt="KMM Architecture" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 2: How does it work? -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">How does it work?</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>A KMM app is composed of three modules:</li>
+            <li><strong>Android app module:</strong> Contains all code to draw and manage the UI, preferably with Jetpack Compose.</li>
+            <li><strong>iOS app module:</strong> Contains Swift code to draw and manage the UI. The shared module is compiled into an Apple Framework.</li>
+            <li><strong>Shared module:</strong> Common to both Android and iOS, contains all shared logic (API calls, DB calls, business logic).</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image2.png" alt="KMM Modules" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 3: Code Structure -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Code Structure</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Project structure includes <strong>androidApp</strong>, <strong>iosApp</strong>, and <strong>shared</strong> modules.</li>
+            <li><strong>androidMain:</strong> Android-specific code.</li>
+            <li><strong>iosMain:</strong> iOS-specific code.</li>
+            <li><strong>commonMain:</strong> Code usable by both platforms.</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image3.png" alt="KMM Project Structure" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 4: Project Structure -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Project Structure</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>A KMM module can be nested by one or many other KMM modules.</li>
+            <li>Shared code can be organized in submodules for single functionalities.</li>
+            <li>Each submodule is a KMM module with its own <strong>androidMain</strong>, <strong>iosMain</strong>, and <strong>commonMain</strong> sections.</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image4.png" alt="KMM Nested Modules" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 5: Gradle -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Gradle</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Define all targets and dependencies in Gradle.</li>
+            <li>Dependencies of <strong>commonMain</strong> are inherited by all targets.</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image5.png" alt="KMM Gradle" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 6: androidMain/iosMain -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">androidMain / iosMain</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Platform-specific packages are essential for unique features.</li>
+            <li>Preferences, logging, and other platform features must be managed in <strong>androidMain</strong> and <strong>iosMain</strong>.</li>
+            <li>Use the <strong>expect/actual</strong> mechanism to manage platform-specific implementations from <strong>commonMain</strong>.</li>
+          </ul>
+        </div>
+        <img src="assets/blog/kmp/image6.png" alt="KMM Platform Packages" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+      </div>
+    </section>
+
+    <!-- Page 7: Expect and Actual -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Expect and Actual</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Mark a method with <strong>expect</strong> in <strong>commonMain</strong> to indicate a platform-specific implementation.</li>
+            <li>Implement the method in the same package in <strong>androidMain</strong> and <strong>iosMain</strong>.</li>
+            <li>Example: define <code>expect fun log()</code> in <code>it.eng.logger</code> and implement in both platforms.</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <img src="assets/blog/kmp/image7.png" alt="KMM Expect/Actual" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+          <img src="assets/blog/kmp/image8.png" alt="KMM Expect/Actual Example" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+          <img src="assets/blog/kmp/image9.png" alt="KMM Expect/Actual Implementation" class="w-72 md:w-96 rounded-xl shadow-glow-cyan" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 8: Problems -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Problems</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Android libraries such as Retrofit and Room are not available on iOS.</li>
+        <li>Must-have features: Dependency injection, database, API calls.</li>
+        <li>Use <strong>expect/actual</strong> for platform-specific libraries, but prefer KMM libraries for shared code.</li>
+      </ul>
+    </section>
+
+    <!-- Page 9: Dependency Injection -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Dependency Injection</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Koin is a KMM dependency usable in the shared module.</li>
+        <li>Apps must add Koin dependencies in <strong>androidApp</strong> and <strong>iosApp</strong> to configure modules.</li>
+            <li>Dagger2 and Hilt are not yet supported, but Google is working on it.</li>
+        <li>Custom DI libraries are an alternative for now.</li>
+      </ul>
+    </section>
+
+    <!-- Page 10: Database and Room -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Database and Room</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>SQLDelight is the best alternative to Room for KMM projects.</li>
+        <li>Integrate dependencies in <strong>commonMain</strong>, <strong>androidMain</strong>, and <strong>iosMain</strong>.</li>
+        <li>Configure database name, location, and dialect in Gradle.</li>
+      </ul>
+    </section>
+
+    <!-- Page 11: Database and Room Implementation -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Database Implementation</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Write SQL code to generate tables and operations.</li>
+        <li>Provide implementations for both systems.</li>
+        <li>Use <strong>SqlDriver</strong> with <strong>expect/actual</strong> for platform-specific drivers.</li>
+            <li>After building, SQLDelight generates <strong>AppDatabaseImpl</strong> and DAOs for database interaction.</li>
+      </ul>
+      <div class="flex flex-col gap-4 mt-4">
+  <img src="assets/blog/kmp/image10.png" alt="KMM SQL Table" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+  <img src="assets/blog/kmp/image11.png" alt="KMM SQL Implementation Android" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+  <img src="assets/blog/kmp/image12.png" alt="KMM SQL Implementation iOS" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+  <img src="assets/blog/kmp/image13.png" alt="KMM SQLDriver" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+  <img src="assets/blog/kmp/image14.png" alt="KMM AppDatabaseImpl" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+      </div>
+    </section>
+
+    <!-- Page 12: Network calls and Retrofit -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Network Calls and Retrofit</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Retrofit is not available for KMM, but Ktor is a useful library for network calls on both platforms.</li>
+        <li>Integrate Ktor dependencies and configure the client with Koin.</li>
+      </ul>
+  <img src="assets/blog/kmp/image15.png" alt="KMM Ktor Network" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+    </section>
+
+    <!-- Page 13: Network calls and Retrofit Implementation -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Network Implementation</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Make network calls using the configured <strong>httpClient</strong> (get, post, delete, put).</li>
+        <li>Access response as <strong>HttpResponse</strong>, deserialize body to model.</li>
+        <li>Example: <code>val myModel = Response.body&lt;MyModel&gt;()</code></li>
+      </ul>
+  <img src="assets/blog/kmp/image16.png" alt="KMM Network Implementation" class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;" />
+    </section>
+
+    <!-- Page 14: Performance Comparison -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Performance Comparison</h3>
+      <p class="text-cyber-muted mb-4">Below is a test made with the same app, developed in three different ways:</p>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Android native app with UI based on XMLs, Jetpack, and MVVM.</li>
+        <li>Android native app with UI based on Compose, Jetpack, and MVVM.</li>
+        <li>Android Kotlin Multiplatform app with Compose.</li>
+      </ul>
+  <p class="text-cyber-muted mb-4">All apps perform similarly, with some differences:</p>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>App (1): 459 ms to first frame, 79 frames (3.16s) to homepage loaded.</li>
+        <li>App (2): 493 ms to first frame, 94 frames (3.76s) to homepage loaded.</li>
+        <li>App (3): 604 ms to first frame, 121 frames (4.84s) to homepage loaded.</li>
+      </ul>
+      <p class="text-cyber-muted mb-4">Tests were made on the same device and network conditions.</p>
+      <video src="assets/blog/kmp/media1.mp4" controls class="w-full md:w-2/3 rounded-xl shadow-glow-cyan mt-4" style="display:block; margin-left:0;"></video>
+    </section>
+  </main>
+
+  <footer id="contact" class="max-w-5xl mx-auto p-6 lg:p-12 mt-12 text-cyber-muted border-t border-cyber-border">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
+      <div class="text-sm">
+        <span>Let’s build something resilient. Find me on </span>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154/" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">LinkedIn</a>
+        <span> or check my </span>
+        <a href="https://codeberg.org/mamila" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">Codeberg</a>.
+      </div>
+      <div class="flex gap-4 mt-4 lg:mt-0">
+        <a href="#" id="contact-link" data-c="bWFtaWxhLmluYm94QG91dGxvb2suY29t" rel="noopener noreferrer" aria-label="Email" class="email-trigger hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/email-icon.svg" alt="Email" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://codeberg.org/mamila" target="_blank" rel="noopener noreferrer" aria-label="Codeberg" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/codeberg-icon.svg" alt="Codeberg" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 text-xs text-cyber-muted text-center lg:text-left">
+      © 2025 Marco Milani • Android & IoT Developer
+    </div>
+  </footer>
+
+    <div id="email-dialog" class="hidden fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center min-h-screen">
+      <div class="bg-cyber-dark border border-cyber-accent rounded-xl shadow-lg p-6 w-80 text-center z-[10000]">
+        <h2 class="text-lg font-bold text-cyber-accent mb-4">Choose Email Option</h2>
+        <p class="text-sm text-cyber-muted mb-6">How would you like to contact me?</p>
+        <div class="flex flex-col gap-3">
+          <button id="use-client" class="px-4 py-2 bg-cyber-accent text-black rounded-lg hover:bg-cyber-accentHover transition">Use Email Client</button>
+          <button id="copy-email" class="px-4 py-2 bg-cyber-darkMuted border border-cyber-accent text-cyber-accent rounded-lg hover:bg-cyber-accentHover hover:text-black transition">Copy Address</button>
+          <button id="cancel-dialog" class="px-4 py-2 bg-transparent text-cyber-muted hover:text-cyber-accentHover transition">Cancel</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

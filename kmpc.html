@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Marco Milani" />
+  <meta name="description" content="Kotlin Multiplatform Jetpack Compose" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kotlin Multiplatform Jetpack Compose – Marco Milani</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-cyber-bg font-body text-cyber-text min-h-screen">
+  <header id="top-bar" class="max-w-5xl mx-auto p-6 lg:p-12">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="font-heading text-2xl lg:text-3xl text-cyber-accent">Marco Milani</h1>
+          <p class="text-cyber-muted text-sm">Android & IoT Developer</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
+        <a href="index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+        <a href="index.html#projects" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+        <a href="blog_index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+        <a href="index.html#about" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+        <a href="index.html#contact" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" class="btn md:hidden ml-auto text-cyber-accent">Menu</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 space-y-2 text-right">
+      <a href="index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+      <a href="index.html#projects" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+      <a href="blog_index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+      <a href="index.html#about" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+      <a href="index.html#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+    <div class="text-center">
+  <h2 class="font-heading text-4xl lg:text-5xl mb-4 logo-gradient">Kotlin Multiplatform Jetpack Compose</h2>
+  <div class="text-cyber-muted text-sm mb-2">Written on: <time datetime="2024-11-18">18 November 2024</time></div>
+  <p class="text-cyber-muted mb-6 text-lg">Sharing UIs across platforms.</p>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto p-6 lg:p-12 space-y-12">
+    <!-- Page 1 -->
+    <section>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Kotlin Multiplatform Jetpack Compose</h3>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Kotlin Multiplatform Jetpack Compose is a declarative framework for sharing user interfaces across multiple platforms.</li>
+            <li>It is based on Kotlin Multiplatform and Jetpack Compose, and is available for:</li>
+            <li class="ml-6">Android</li>
+            <li class="ml-6">Desktop</li>
+            <li class="ml-6">iOS (in beta)</li>
+            <li class="ml-6">Web (in alpha)</li>
+          </ul>
+        </div>
+        <div class="flex flex-row gap-4">
+          <img src="assets/blog/kmpc/image1.png" alt="KMP Compose Platforms" class="w-40 md:w-56 rounded-xl" />
+        <img src="assets/blog/kmpc/image2.png" alt="KMP Compose Logo" class="w-40 md:w-56 rounded-xl" />
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">KMP Jetpack Compose - Why?</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Accelerated UI development: Build your UI once, use it on all platforms.</li>
+  <li>Android UI and architecture skills can be applied to other platforms by sharing UI using Compose APIs.</li>
+  <li>Rich ecosystem: Leverage Kotlin libraries and frameworks.</li>
+  <li>Easy integration with every platform: Full access to native APIs and platform-specific user interfaces.</li>
+  <li>Component-level reuse: Create customizable widgets for all platforms.</li>
+  <li>Gradual adoption: Share individual screens or entire user interfaces between platforms.</li>
+      </ul>
+    </section>
+
+    <!-- Page 3 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Challenges</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+  <li>ViewModels: Not available on iOS or Desktop.</li>
+  <li>Image loading: Coil, Glide, and Picasso are Android-only.</li>
+  <li>Firebase: Integration across multiple platforms?</li>
+  <li>Navigation: Jetpack Navigation is Android-only.</li>
+      </ul>
+    </section>
+
+    <!-- Page 4 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">KMP Jetpack Compose – ViewModel 1</h3>
+      <p class="text-cyber-muted mb-4">Alternatives to familiar Android tools:</p>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+  <li>lifecycle-viewmodel-compose: Use ViewModels in the shared module (experimental).</li>
+  <li>Moko MVVM: Multiplatform MVVM architecture components.</li>
+      </ul>
+    </section>
+
+    <!-- Page 5 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Using Moko MVVM</h3>
+      <p class="text-cyber-muted mb-4">Add dependencies in commonMain:</p>
+    <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-xs"><code>commonMainApi("dev.icerock.moko:mvvm-core:0.16.1")
+commonMainApi("dev.icerock.moko:mvvm-compose:0.16.1")
+commonMainApi("dev.icerock.moko:mvvm-flow:0.16.1")
+commonMainApi("dev.icerock.moko:mvvm-flow-compose:0.16.1")</code></pre>
+      <p class="text-cyber-muted mb-4">Factory method for viewModels:</p>
+      <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-xs"><code>@Composable
+fun &lt;T : ViewModel&gt; getViewModel(
+    key: Any,
+    factory: ViewModelFactory&lt;T&gt;
+): T {
+    return getViewModel(
+       key = key,
+       klass = factory.kClass,
+       viewModelBlock = factory::createViewModel
+    )
+}</code></pre>
+    </section>
+
+    <!-- Page 6 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">ViewModel Usage</h3>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>homepageViewModel: HomepageViewModel = getViewModel(
+  key = "homepage_view_model",
+  factory = viewModelFactory {
+     KoinHelper().getHomePageViewModel()
+  }
+)</code></pre>
+      <p class="text-cyber-muted mb-4">getHomePageViewModel can be a common method or an expect function with platform-specific actual implementations.</p>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>fun getHomePageViewModel() : HomepageViewModel</code></pre>
+      <div class="flex flex-col md:flex-row gap-8">
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm flex-1"><code>actual fun getHomePageViewModel() : HomepageViewModel{
+  return HomepageViewModel(get(), get())
+}</code></pre>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm flex-1"><code>actual fun getHomePageViewModel():HomepageViewModel{
+  return get&lt;HomepageViewModel&gt;()
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Page 7 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Image Loading: Coil & Kamel</h3>
+  <p class="text-cyber-muted mb-4">Coil v3 supports multiplatform; Kamel is built specifically for Compose Multiplatform.</p>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>implementation("media.kamel:kamel-image:1.0.0")</code></pre>
+    </section>
+
+    <!-- Page 8 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Kamel Usage</h3>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>KamelImage(
+  resource = asyncPainterResource(data = url),
+  contentDescription = contentDescription,
+  contentScale= contentScale,
+  modifier= modifier.fillMaxSize(),
+  onFailure = {
+     LoggerVisibility.Error.log("NetworkImage", "Error on loading image: $url")
+  }
+)</code></pre>
+  <p class="text-cyber-muted mb-4">The resource parameter can be a URL, string, or file.</p>
+    </section>
+
+    <!-- Page 9 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Firebase in KMP</h3>
+  <p class="text-cyber-muted mb-4">GitLive is a project that provides Firebase support for KMP.</p>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>api("dev.gitlive:firebase-config:1.13.0")</code></pre>
+  <p class="text-cyber-muted mb-4">After setup, use Firebase just as you would in Android:</p>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>val firebaseRemoteConfig = Firebase.remoteConfig
+firebaseRemoteConfig.fetchAndActivate()</code></pre>
+    </section>
+
+    <!-- Page 10 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Navigation</h3>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>implementation("org.jetbrains.androidx.navigation:navigation-compose:2.7.0-alpha07")</code></pre>
+  <p class="text-cyber-muted mb-4">Configure NavHost as you would in Android Compose:</p>
+  <pre class="bg-cyber-panel text-cyber-accent p-4 rounded-xl mb-4 text-sm"><code>NavHost(
+   navController = LocalNavController.current.navController,
+   startDestination = NavigationRoute.HomePageScreen.uniqueName,
+   modifier = Modifier.fillMaxSize()
+){
+   composable(route = NavigationRoute.HomePageScreen.uniqueName) {
+      HomepageScreen()
+   }
+   composable(
+     route = NavigationRoute.CharactersDetailScreen.uniqueName + NavigationRoute.CharactersDetailScreen.pathParam,
+     arguments = listOf(navArgument("id"){type = NavType.IntType}),
+     deepLinks = listOf(NavDeepLink(NavigationRoute.CharactersDetailScreen.deeplinkBase +
+NavigationRoute.CharactersDetailScreen.uniqueName + NavigationRoute.CharactersDetailScreen.pathParam))
+        ){
+        it.arguments?.getInt("id")?.run {
+            CharacterDetailScreen(this)
+        }
+   }
+}</code></pre>
+    </section>
+
+    <!-- Page 11 -->
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Pros & Cons</h3>
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        
+        <div class="flex-1">
+          <h4 class="font-heading text-xl mb-2 text-cyber-accent">Pros</h4>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>One Team</li>
+            <li>One codebase</li>
+            <li>Multiple apps with shared code</li>
+            <li>Ability to write native code anytime</li>
+          </ul>
+          <h4 class="font-heading text-xl mb-2 text-cyber-accent">Cons</h4>
+          <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+            <li>Jetpack Compose is still in beta or alpha for some platforms</li>
+            <li>Many APIs are experimental and not yet production-ready</li>
+          </ul>
+        </div>
+        <div class="flex flex-row gap-4">
+          <video src="assets/blog/kmpc/media1.mp4" controls class="w-40 md:w-64 rounded-xl mb-4" style="display:block; margin-left:0;"></video>
+          <video src="assets/blog/kmpc/media2.mp4" controls class="w-40 md:w-52 rounded-xl mb-4" style="display:block; margin-left:0;"></video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="max-w-5xl mx-auto p-6 lg:p-12 mt-12 text-cyber-muted border-t border-cyber-border">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
+      <div class="text-sm">
+        <span>Let’s build something resilient. Find me on </span>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154/" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">LinkedIn</a>
+        <span> or check my </span>
+        <a href="https://codeberg.org/mamila" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">Codeberg</a>.
+      </div>
+      <div class="flex gap-4 mt-4 lg:mt-0">
+        <a href="#" id="contact-link" data-c="bWFtaWxhLmluYm94QG91dGxvb2suY29t" rel="noopener noreferrer" aria-label="Email" class="email-trigger hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/email-icon.svg" alt="Email" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://codeberg.org/mamila" target="_blank" rel="noopener noreferrer" aria-label="Codeberg" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/codeberg-icon.svg" alt="Codeberg" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 text-xs text-cyber-muted text-center lg:text-left">
+      © 2025 Marco Milani • Android & IoT Developer
+    </div>
+  </footer>
+
+    <div id="email-dialog" class="hidden fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center min-h-screen">
+      <div class="bg-cyber-dark border border-cyber-accent rounded-xl shadow-lg p-6 w-80 text-center z-[10000]">
+        <h2 class="text-lg font-bold text-cyber-accent mb-4">Choose Email Option</h2>
+        <p class="text-sm text-cyber-muted mb-6">How would you like to contact me?</p>
+        <div class="flex flex-col gap-3">
+          <button id="use-client" class="px-4 py-2 bg-cyber-accent text-black rounded-lg hover:bg-cyber-accentHover transition">Use Email Client</button>
+          <button id="copy-email" class="px-4 py-2 bg-cyber-darkMuted border border-cyber-accent text-cyber-accent rounded-lg hover:bg-cyber-accentHover hover:text-black transition">Copy Address</button>
+          <button id="cancel-dialog" class="px-4 py-2 bg-transparent text-cyber-muted hover:text-cyber-accentHover transition">Cancel</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

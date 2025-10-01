@@ -1,6 +1,7 @@
   window.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('top-bar');
-    header.classList.add('fade-in-loaded');
+      const header = document.getElementById('top-bar');
+      header.classList.add('fade-in-loaded');
+      
 
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -21,6 +22,7 @@
 // Open dialog for all triggers
 document.querySelectorAll('.email-trigger').forEach(clink => {
   clink.addEventListener('click', function (event) {
+    console.log("Email trigger clicked.");
     event.preventDefault();
     document.getElementById('email-dialog').classList.remove('hidden');
     // Store current trigger for "Use Email Client" and "Copy Email"

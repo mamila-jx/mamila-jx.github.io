@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Marco Milani" />
+  <meta name="description" content="Alexa Skill Kit – How Alexa Skills work, workflow, and Video Skill Kit explained." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexa Skill Kit – Marco Milani</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body class="bg-cyber-bg font-body text-cyber-text min-h-screen">
+    <header id="top-bar" class="max-w-5xl mx-auto p-6 lg:p-12">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="font-heading text-2xl lg:text-3xl text-cyber-accent">Marco Milani</h1>
+          <p class="text-cyber-muted text-sm">Android & IoT Developer</p>
+        </div>
+      </div>
+
+       <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-6 items-center text-sm ml-auto">
+      <a href="index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+      <a href="index.html#projects" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+      <a href="blog_index.html" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+      <a href="index.html#about" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+      <a href="index.html#contact" class="text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="menu-btn" aria-expanded="false" class="btn md:hidden ml-auto text-cyber-accent">Menu</button>
+
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="md:hidden mt-4 space-y-2 text-right">
+    <a href="index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Home</a>
+    <a href="index.html#projects" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Projects</a>
+    <a href="blog_index.html" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Blog</a>
+    <a href="index.html#about" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">About</a>
+    <a href="index.html#contact" class="block text-cyber-accent hover:text-cyber-accentHover hover:shadow-glow transition">Contact</a>
+  </div>
+</header>
+
+
+
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto p-6 lg:p-12 mt-6">
+    <div class="text-center">
+  <h2 class="font-heading text-4xl lg:text-5xl mb-4 logo-gradient">Alexa Skill Kit: Voice Apps for Everyone</h2>
+  <div class="text-cyber-muted text-sm mb-2">Written on: <time datetime="2022-12-06">6 December 2022</time></div>
+  <p class="text-cyber-muted mb-6 text-lg">How Alexa Skills work, workflow, and Video Skill Kit explained.</p>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto p-6 lg:p-12 space-y-12">
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">What is a skill?</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+  <li>A skill is an app stored and executed on Amazon servers, accessed by customers using voice commands and natural language.</li>
+      </ul>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-heading text-lg mb-2">Ease of Access</h4>
+          <ul class="list-disc list-inside text-cyber-muted space-y-1 mb-4">
+            <li>Voice user interfaces (VUIs) are natural, conversational, and user-centric.</li>
+            <li>VUIs are rich and flexible.</li>
+            <li>The easier a skill is to use, the faster and more efficient the experience.</li>
+          </ul>
+          <h4 class="font-heading text-lg mb-2">Speed and Efficiency</h4>
+          <ul class="list-disc list-inside text-cyber-muted space-y-1 mb-4">
+            <li>Voice commands can be faster than using a keyboard or touchscreen.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg mb-2">Skill Monetization</h4>
+          <ul class="list-disc list-inside text-cyber-muted space-y-1 mb-4">
+            <li>Skills can support existing businesses.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Alexa Skill Kit Workflow</h3>
+      <div class="w-full mb-8">
+        <img src="assets/blog/ask/ASK-Step1.png" alt="Alexa Skill Kit Workflow Diagram" class="w-full h-auto rounded-xl shadow-glow-cyan object-cover" />
+      </div>
+      <ol class="space-y-8">
+        <li>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div>
+              <span class="font-bold text-cyber-accent">Step 1:</span> User says a command using natural language. The Alexa device records it and sends it to the cloud.<br>
+              <span class="italic">Example:</span> “Alexa, open android dev skills”
+            </div>
+                        <img src="assets/blog/ask/ASK-Step2.png" alt="Step 1" class="w-40 md:w-64 rounded-xl shadow-glow-cyan flex-shrink-0" />
+
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div>
+              <span class="font-bold text-cyber-accent">Step 2:</span> In the cloud, the voice command is processed through Automatic Speech Recognition to convert it into text. Then, Natural Language Understanding converts the text into JSON.
+            </div>
+                        <img src="assets/blog/ask/ASK-Step3.png" alt="Step 2" class="w-40 md:w-64 rounded-xl shadow-glow-cyan flex-shrink-0" />
+
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div>
+              <span class="font-bold text-cyber-accent">Step 3:</span> The JSON is sent to the appropriate AWS host, which contains the skill (Lambda Function) that manages the request.
+            </div>
+                        <img src="assets/blog/ask/ASK-Step4.png" alt="Step 3" class="w-40 md:w-64 rounded-xl shadow-glow-cyan flex-shrink-0" />
+
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div>
+              <span class="font-bold text-cyber-accent">Step 4:</span> The skill (Lambda Function) processes the request and produces a response in JSON format, which is sent back to the Alexa cloud.
+            </div>
+                                    <img src="assets/blog/ask/ASK-Step5.png" alt="Step 3" class="w-40 md:w-64 rounded-xl shadow-glow-cyan flex-shrink-0" />
+
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div>
+              <span class="font-bold text-cyber-accent">Step 5:</span> In the cloud, the response can be converted into text and then into a voice reply, or sent to the Alexa device for a visual response.
+            </div>
+                        <img src="assets/blog/ask/ASK-Step6.png" alt="Step 5" class="w-40 md:w-64 rounded-xl shadow-glow-cyan flex-shrink-0" />
+
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Prebuilt and Custom Skills</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Amazon provides prebuilt skills for Alexa and compatible devices:</li>
+        <ul class="list-disc list-inside ml-6 text-cyber-muted space-y-1">
+          <li>Smart Home</li>
+          <li>Flash Briefing</li>
+          <li>Video Skill Kit</li>
+          <li>Music Skill Kit</li>
+          <li>Meeting Skill Kit</li>
+        </ul>
+        <li>For other functionalities, you can create custom skills.</li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Video Skill Kit</h3>
+      <ul class="list-disc list-inside text-cyber-muted space-y-2 mb-6">
+        <li>Video Skill Kit focuses on video experience and includes:</li>
+        <ul class="list-disc list-inside ml-6 text-cyber-muted space-y-1">
+          <li>Search and play content</li>
+          <li>Playback controls</li>
+          <li>Volume controls</li>
+          <li>Turn a device on or off</li>
+          <li>Change the input video device</li>
+          <li>Launch an app</li>
+          <li>Record video content</li>
+          <li>Video catalog ingestion</li>
+        </ul>
+      </ul>
+      <div class="flex justify-center mt-2"><img src="assets/blog/ask/ASK-VideoKit.png" alt="Video Skill Kit" class="w-64 rounded-xl shadow-glow-cyan" /></div>
+    </section>
+
+    <section>
+      <h3 class="font-heading text-2xl mb-4 text-cyber-accent">Conclusion</h3>
+      <p class="text-cyber-muted mb-4">The Video Skill Kit interfaces use a pre-built voice interaction model and are more robust than custom skills. Alexa is aware of devices and services through these interfaces, while custom skills must be invoked by name.</p>
+      <p class="text-cyber-muted font-bold">It is always better to use a pre-built skill when available and develop a custom skill only if needed.</p>
+  <p class="text-cyber-muted font-bold">Whenever possible, use a pre-built skill. Develop a custom skill only when necessary.</p>
+    </section>
+  </main>
+
+  <footer id="contact" class="max-w-5xl mx-auto p-6 lg:p-12 mt-12 text-cyber-muted border-t border-cyber-border">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
+      <div class="text-sm">
+        <span>Let’s build something resilient. Find me on </span>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154/" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">LinkedIn</a>
+        <span> or check my </span>
+        <a href="https://codeberg.org/mamila" target="_blank" class="hover:text-cyber-accentHover hover:shadow-glow transition">Codeberg</a>.
+      </div>
+      <div class="flex gap-4 mt-4 lg:mt-0">
+        <a href="#" id="contact-link" data-c="bWFtaWxhLmluYm94QG91dGxvb2suY29t" rel="noopener noreferrer" aria-label="Email" class="email-trigger hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/email-icon.svg" alt="Email" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://www.linkedin.com/in/marco-m-4b6149154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+        <a href="https://codeberg.org/mamila" target="_blank" rel="noopener noreferrer" aria-label="Codeberg" class="hover:shadow-glow transition transform hover:scale-125">
+          <img src="assets/images/codeberg-icon.svg" alt="Codeberg" class="w-9 h-9 object-contain" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 text-xs text-cyber-muted text-center lg:text-left">
+      © 2025 Marco Milani • Android & IoT Developer
+    </div>
+  </footer>
+
+    <div id="email-dialog" class="hidden fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center min-h-screen">
+      <div class="bg-cyber-dark border border-cyber-accent rounded-xl shadow-lg p-6 w-80 text-center z-[10000]">
+        <h2 class="text-lg font-bold text-cyber-accent mb-4">Choose Email Option</h2>
+        <p class="text-sm text-cyber-muted mb-6">How would you like to contact me?</p>
+        <div class="flex flex-col gap-3">
+          <button id="use-client" class="px-4 py-2 bg-cyber-accent text-black rounded-lg hover:bg-cyber-accentHover transition">Use Email Client</button>
+          <button id="copy-email" class="px-4 py-2 bg-cyber-darkMuted border border-cyber-accent text-cyber-accent rounded-lg hover:bg-cyber-accentHover hover:text-black transition">Copy Address</button>
+          <button id="cancel-dialog" class="px-4 py-2 bg-transparent text-cyber-muted hover:text-cyber-accentHover transition">Cancel</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
